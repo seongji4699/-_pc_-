@@ -1,0 +1,20 @@
+*
+
+/*css모든 요소*/
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    /*밑줄제거*/
+    color: inherit;
+    /* 부모 요소의 글자 색상 상속 */
+}
+
+img {
+    display: block;
+    /* 이미지 하단의 불필요한 여백 제거 */
+}

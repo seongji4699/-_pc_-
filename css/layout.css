@@ -1,0 +1,117 @@
+header {
+    position: fixed;
+    /* 스크롤해도 맨 위에 고정 */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* 레이어 개념, 다른 요소보다 위에 */
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0B0E16;
+}
+
+.logo img {
+    width: 108px;
+    height: 30px;
+}
+
+.gnb {
+    display: flex;
+    gap: 50px;
+}
+
+.gnb a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #EBD8AF;
+}
+
+.gnb a:hover {
+    color: #F9BF2D;
+}
+
+.intro {
+    position: relative;
+    height: 1020px;
+    padding: 220px 100px 0;
+    background: linear-gradient(rgba(11, 14, 20, 0.5), rgba(11, 14, 20, 0.5)), url(../img/intro-background.jpg) center / cover no-repeat;
+}
+
+.intro-jp {
+    position: absolute;
+    top: 200px;
+    right: 90px;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.intro-title img {
+    width: 1720px;
+    max-width: 100%;
+    height: auto;
+}
+
+.girl {
+    position: absolute;
+    right: 120px;
+    bottom: 0;
+    z-index: 1;
+    width: 560px;
+}
+
+.intro-text {
+    margin-top: 40px;
+}
+
+.intro-text h3 {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.intro-text p {
+    margin-top: 12px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 20px;
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    width: 48px;
+    animation: bounce 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        /*40px 아래에서 시작*/
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+/* 위아래로 통통 */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
